@@ -1,7 +1,10 @@
 {
+  "throw error": "throw error",
   "Главная страница": "Main page",
-  "О сайте": "О сайте",
+  "О сайте": "About the site",
+  "Обновить страницу": "Refresh the page",
   "Перевод": "Translate",
+  "Произошла непредвиденная ошибка": "An unexpected error has occurred",
   "Страница не найдена": "Page not found",
   "Тестовый пример": "Test example",
   "Язык": "English"
