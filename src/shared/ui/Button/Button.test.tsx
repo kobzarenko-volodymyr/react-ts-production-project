@@ -3,7 +3,6 @@ import { Button, ButtonTheme } from "shared/ui/Button/Button";
 
 describe("Button", () => {
   test("Test render", () => {
-    // render чтобы изолированно отрендерить компонент
     render(<Button>TEST</Button>);
     expect(screen.getByText("TEST")).toBeInTheDocument();
   });
