@@ -2,7 +2,10 @@
   "decrement": "decrement",
   "increment": "increment",
   "throw error": "throw error",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password",
   "Войти": "Login",
+  "Выйти": "Выйти",
   "Главная": "Main",
   "Главная страница": "Main page",
   "Короткий язык": "En",
@@ -13,6 +16,7 @@
   "Произошла непредвиденная ошибка": "An unexpected error has occurred",
   "Страница не найдена": "Page not found",
   "Тестовый пример": "Test example",
+  "Форма авторизации": "Auth form",
   "Язык": "English",
-  "новый перевод": "новый перевод"
+  "новый перевод": "new Translate"
 }
