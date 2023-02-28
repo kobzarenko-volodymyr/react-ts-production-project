@@ -1,3 +1,6 @@
+/*Компоненты которые не требуют Асинхронного Чанка мы экспортируем 
+именнованным образом, а с асинк через export default */
+
 import { classNames } from "shared/lib/classNames/classNames";
 import { useTranslation } from "react-i18next";
 import cls from "./Navbar.module.scss";
@@ -54,7 +57,9 @@ export const Navbar = ({ className }: NavbarProps) => {
       >
         {t("Войти")}
       </Button>
-      <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+      {isAuthModal && (
+        <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+      )}
     </div>
   );
 };
