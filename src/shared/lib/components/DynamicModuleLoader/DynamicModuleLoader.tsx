@@ -24,7 +24,6 @@ export const DynamicModuleLoader: FC<DynamicModuleLoaderProps> = (props) => {
   useEffect(() => {
     Object.entries(reducers).forEach(([name, reducer]) => {
       store.reducerManager.add(name as StateSchemaKey, reducer);
-      //просто выводит сообщение в Redux devtool
       dispatch({ type: `@INIT ${name} reducer` });
     });
 

@@ -1,11 +1,6 @@
 import path from "path";
 
 export default {
-  globals: {
-    __IS_DEV__: true,
-    __API__: "",
-    __PROJECT__: "jest",
-  },
   clearMocks: true,
   testEnvironment: "jsdom",
   moduleDirectories: ["node_modules"],
@@ -18,5 +13,10 @@ export default {
     "\\.svg": path.resolve(__dirname, "jestEmptyComponent.tsx"),
   },
   testMatch: ["<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)"],
+  globals: {
+    __IS_DEV__: true,
+    __API__: "",
+    __PROJECT__: "jest",
+  },
   coveragePathIgnorePatterns: ["/node_modules/"],
 };
