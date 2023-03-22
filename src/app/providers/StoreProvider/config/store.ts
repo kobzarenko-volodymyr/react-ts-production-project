@@ -18,14 +18,11 @@ export function createReduxStore(
     counter: counterReducer,
     user: userReducer,
   };
-
   const reducerManager = createReducerManager(rootReducers);
-
   const extraArg: ThunkExtraArg = {
     api: $api,
     navigate,
   };
-
   const store = configureStore({
     reducer: reducerManager.reduce as Reducer<CombinedState<StateSchema>>,
     devTools: __IS_DEV__,
@@ -37,10 +34,8 @@ export function createReduxStore(
         },
       }),
   });
-
   //@ts-ignore
   store.reducerManager = reducerManager;
-
   return store;
 }
 

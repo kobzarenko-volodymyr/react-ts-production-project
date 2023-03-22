@@ -2,10 +2,15 @@
   cursor: pointer;
   color: var(--primary-color);
   padding: 6px 15px;
+
+  &:hover {
+    opacity: 0.8;
+    fill-opacity: 0.8;
+    stroke-opacity: 0.8;
+  }
 }
 
-.clear,
-.clearInverted {
+.clear {
   padding: 0;
   border: none;
   background: none;
@@ -75,6 +80,6 @@
   font: var(--font-xl);
 }
 
-:disabled {
+.disabled {
   opacity: 0.5;
 }
